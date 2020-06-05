@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="wrapper"> 
+            <h1 class="title text-center">My To Do List</h1>
+
+        <div class="add-form text-center">
+            <form v-on:submit.prevent>
+                <input v-model="newItem" class="input" type="text">
+                <button v-on:click="addItem" class="add-btn">add</button>
+            </form>
+        </div>
+
+            <ul class="list">
+                <li v-for="(todo, index) in todos"　class="list-item">
+                    <div>
+                        <input v-model="todo.isDone" class="checkbox" type="checkbox">
+                        <span v-bind:class="{ done : todo.isDone }">{{ todo.item }}</span>
+                    </div>
+                    <button v-on:click="deleteItem(index)" class="delete-btn"><i class="fas fa-trash-alt"></i></button>
+                </li>
+            </ul>
+        </div>
+    </div>  
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

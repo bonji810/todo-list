@@ -1,0 +1,107 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: 'Poppins','Noto Sans JP', sans-serif;
+  font-weight: 200;
+  color: #444444;
+}
+
+li {
+  list-style: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-size: 4.8rem;
+  font-weight: 100;
+  margin: 60px 0 60px;
+}
+
+.add-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 300px;
+  height: 50px;
+  padding: 20px 30px;
+  border: 1px solid #66a6ff;
+  border-radius: 35px;
+  font-family: 'Poppins','Noto Sans JP', sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  color: #444444;
+}
+
+.add-btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100px;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: 35px;
+  border: none;
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Poppins','Noto Sans JP', sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+.list {
+  max-width: 400px;
+  margin: 60px auto;
+}
+
+.list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.checkbox {
+  margin-right: 20px;
+}
+
+.delete-btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
